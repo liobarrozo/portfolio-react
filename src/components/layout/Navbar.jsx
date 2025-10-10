@@ -16,7 +16,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+        <a href="#" className="flex items-center hover:text-purple-700 transition-colors">
           Sobre mí
         </a>
       </Typography>
@@ -26,7 +26,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+        <a href="#" className="flex items-center hover:text-purple-700 transition-colors">
           Servicios
         </a>
       </Typography>
@@ -36,7 +36,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+        <a href="#" className="flex items-center hover:text-purple-700 transition-colors">
           Proyectos
         </a>
       </Typography>
@@ -46,7 +46,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+        <a href="#" className="flex items-center hover:text-purple-700 transition-colors">
           Contacto
         </a>
       </Typography>
@@ -74,8 +74,8 @@ export default function NavbarSimple() {
         <Typography
           as="a"
           href="#"
-          variant="h6"
-          className="mr-4 cursor-pointer py-1.5"
+          variant="h2"
+          className="mr-4 cursor-pointer py-1.5 text-purple-700"
         >
           liobarrozo
         </Typography>
