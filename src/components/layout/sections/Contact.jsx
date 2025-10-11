@@ -42,10 +42,10 @@ export function ContactSection14() {
               Motivo de contacto
             </Typography>
             <div className="flex gap-4">
-              <Button variant="outlined" className="max-w-fit">
+              <Button variant="filled" className="max-w-fit">
                 Consulta por proyecto
               </Button>
-              <Button variant="outlined" className="max-w-fit">
+              <Button variant="filled" className="max-w-fit">
                 Oportunidad laboral
               </Button>
             </div>
