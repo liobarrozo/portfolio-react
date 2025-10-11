@@ -1,17 +1,13 @@
 import React from "react";
 import {
-  Navbar,
-  Collapse,
   Button,
   IconButton,
   Typography,
   Input,
 } from "@material-tailwind/react";
 import {
-  RectangleStackIcon,
-  UserCircleIcon,
-  CommandLineIcon,
-  Squares2X2Icon,
+  BoltIcon
+
 } from "@heroicons/react/24/solid";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -44,10 +40,12 @@ function HeroSection16() {
 
   return (
     <>
+    
       <header className="bg-white p-8">
         <div className="grid mt-16 min-h-[82vh] w-full lg:h-[54rem] md:h-[34rem] place-items-stretch bg-[url('/image/bg-hero-17.svg')] bg-center bg-contain bg-no-repeat">
           <div className="container mx-auto px-4 text-center">
             <Typography className="inline-flex text-xs rounded-lg border-[1.5px] border-blue-gray-50 bg-white py-1 lg:px-4 px-1 font-medium text-primary">
+              <BoltIcon className="h-6 w-6"/>
               Disponible para nuevos proyectos
             </Typography>
             <Typography
