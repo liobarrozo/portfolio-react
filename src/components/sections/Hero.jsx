@@ -49,10 +49,10 @@ export default function Hero() {
             Explorar Proyectos
           </button>
           <a 
-            href="/CV_Lio_Barrozo.pdf" // Nombre exacto del archivo en la carpeta public
+            href="/CV_Alejo-Barrozo.pdf" // Nombre exacto del archivo en la carpeta public
             target="_blank" 
             rel="noopener noreferrer"
-            download="CV_Lio_Barrozo_Analyst.pdf" // Nombre con el que se descargará
+            download="CV_Lio_Barrozo_Dev_Analyst.pdf" // Nombre con el que se descargará
             className="btn btn-outline rounded-none btn-lg px-8 font-bold"
           >
             Descargar CV (PDF)
