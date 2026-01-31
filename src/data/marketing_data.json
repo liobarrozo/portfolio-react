@@ -1,0 +1,13 @@
+{
+    "summary": {
+      "total_spend": 1250.00,
+      "total_sales": 5420.50,
+      "roas": 4.33,
+      "avg_cpa": 12.40
+    },
+    "campaigns": [
+      { "name": "IG_Prospecting_Summer", "spend": 450, "clicks": 1200, "conversions": 35, "ctr": 2.6 },
+      { "name": "IG_Retargeting_Catalog", "spend": 300, "clicks": 850, "conversions": 42, "ctr": 4.1 },
+      { "name": "GOOG_Search_Brand", "spend": 500, "clicks": 2100, "conversions": 88, "ctr": 5.8 }
+    ]
+  }

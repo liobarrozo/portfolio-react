@@ -1,1 +1,15 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+/* Forzamos el esquema de color lofi y tipografía técnica */
+:root {
+  font-family: 'Inter', ui-sans-serif, system-ui;
+}
+
+[data-theme="lofi"] {
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+  }

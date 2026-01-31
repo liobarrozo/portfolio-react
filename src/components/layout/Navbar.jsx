@@ -1,103 +1,45 @@
-import React from "react";
-import {
-  Navbar,
-  Collapse,
-  Typography,
-  IconButton,
-} from "@material-tailwind/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
- 
-function NavList() {
+import { Code2, Database, Menu } from "lucide-react";
+
+export default function Navbar() {
+
+  const closeDropdown = () => {
+    const elem = document.activeElement;
+    if (elem) {
+      elem.blur();
+    }
+  };
   return (
-    <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <a href="#" className="flex items-center hover:text-purple-700 transition-colors">
-          Sobre mí
+    <div className="navbar bg-base-100 border-b border-base-300 px-4 md:px-8 sticky top-0 z-50">
+      <div className="flex-1">
+        <a className="text-xl font-black tracking-tighter flex items-center gap-2">
+          <div className="w-8 h-8 bg-primary text-primary-content flex items-center justify-center font-mono text-xs">
+            LB
+          </div>
+          LIOBARROZO
         </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <a href="#" className="flex items-center hover:text-purple-700 transition-colors">
-          Servicios
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <a href="#" className="flex items-center hover:text-purple-700 transition-colors">
-          Proyectos
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <a href="#" className="flex items-center hover:text-purple-700 transition-colors">
-          Contacto
-        </a>
-      </Typography>
-    </ul>
-  );
-}
- 
-export default function NavbarSimple() {
-  const [openNav, setOpenNav] = React.useState(false);
- 
-  const handleWindowResize = () =>
-    window.innerWidth >= 960 && setOpenNav(false);
- 
-  React.useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
- 
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
- 
-  return (
-    <Navbar shadow={true} className="mx-auto border-1 border-transparent overflow-visible rounded-xl  max-w-screen-xl px-6 py-3">
-      <div className="flex items-center justify-between text-blue-gray-900">
-        <Typography
-          as="a"
-          href="#"
-          variant="h2"
-          className="mr-4 cursor-pointer py-1.5 text-purple-700"
-        >
-          liobarrozo
-        </Typography>
-        <div className="hidden lg:block">
-          <NavList />
-        </div>
-        <IconButton
-          variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-          ripple={false}
-          onClick={() => setOpenNav(!openNav)}
-        >
-          {openNav ? (
-            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-          ) : (
-            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-          )}
-        </IconButton>
       </div>
-      <Collapse className="overflow-hidden lg:hidden" open={openNav}>
-        <NavList />
-      </Collapse>
-    </Navbar>
+      <div className="flex-none gap-2">
+        {/* Menú Desktop */}
+        <div className="hidden md:flex">
+          <ul className="menu menu-horizontal px-1 font-mono text-xs uppercase tracking-widest font-bold">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        {/* Menú Mobile (Dropdown) */}
+        <div className="dropdown dropdown-end md:hidden">
+          <label tabIndex={0} className="btn btn-ghost btn-circle">
+            <Menu size={20} />
+          </label>
+          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 border border-base-300 w-52 font-mono uppercase text-xs">
+            <li><a href="#skills" onClick={closeDropdown}>Skills</a></li>
+            <li><a href="#proyectos" onClick={closeDropdown}>Proyectos</a></li>
+            <li><a href="#contacto" onClick={closeDropdown}>Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   );
 }

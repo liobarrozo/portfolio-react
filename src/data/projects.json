@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "title": "E-Commerce Data Dashboard",
+      "description": "Dashboard administrativo que cruza ventas reales vs. inversión en Meta Ads.",
+      "tags": ["React", "Python", "SQL"],
+      "type": "dual",
+      "category": "Full Stack & Analytics",
+      "repoUrl": null,
+      "liveUrl": null
+    },
+    {
+      "id": 2,
+      "title": "Marketing Attribution Model",
+      "description": "Script de Python para procesar conversiones de GA4 y asignar crédito de venta.",
+      "tags": ["Python", "GA4 API", "Pandas"],
+      "type": "data",
+      "category": "Data Analyst",
+      "repoUrl": null,
+      "liveUrl": null
+    },
+    {
+      "id": 3,
+      "title": "Turisuite App",
+      "description": "Aplicación de gestión de reservas y excursiones, para empresas y agencias de turismo.",
+      "tags": ["React", "Node.js", "PostgreSQL, Supabase"],
+      "type": "dual",
+      "category": "Web Development",
+      "repoUrl": null,
+      "liveUrl": "https://demo.turisuite.com/"
+    }
+  ]
